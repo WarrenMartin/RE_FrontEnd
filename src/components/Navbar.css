@@ -1,0 +1,91 @@
+
+.nav-logo-container img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    color: #ddd;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-10px); /* Start slightly above */
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Hide overflow */
+    padding: 0 20px; /* Padding top and bottom set to 0 initially */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start fully transparent */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+
+}
+
+.nav-item:hover .mega-menu {
+    max-height: 400px; /* Adjust to desired max height */
+    padding: 20px; /* Restore padding on hover */
+    opacity: 1; /* Fade in */
+}
+
+.mega-menu-content {
+    display: flex;
+    overflow-x: auto;
+    max-height: 400px;
+}
+
+.mega-menu-column {
+    min-width: 250px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.mega-menu-column h3 {
+    margin-top: 0;
+}
+
+.mega-menu-column a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.mega-menu-column a:hover {
+    color: #104b97;
+}
+
+.post-property-button {
+    background-color: #104b97;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.post-property-button:hover {
+    background-color: #104b97;
+}
